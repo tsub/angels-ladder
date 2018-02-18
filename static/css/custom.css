@@ -15,3 +15,12 @@
 .summary > p img {
   margin: 12px 0;
 }
+
+nav ul.pagination li {
+  border: inherit;
+  background-color: inherit;
+}
+
+nav ul.pagination li.active {
+  border-radius: 50%;
+}
