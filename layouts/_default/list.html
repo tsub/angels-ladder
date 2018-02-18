@@ -10,7 +10,7 @@
       <div class="meta">
         {{ .Date.Format "Jan 2, 2006" }} &nbsp;
         {{ range .Params.tags }}
-          #<a href="/tags/{{ . | urlize }}">{{ . }}</a>&nbsp;
+          <a href="/tags/{{ . | urlize }}">#{{ . }}</a>&nbsp;
         {{ end }}
       </div>
     </div>
