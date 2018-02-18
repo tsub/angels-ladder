@@ -41,6 +41,12 @@
     <script type="text/javascript">stLight.options({publisher: '{{ . }}', doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
   {{ end }}
 
+  <!-- Twitter Cards
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  {{ if .Site.Params.enableTwitterCard }} 
+    {{ partial "twitter-cards.html" . }}
+  {{ end }}
+
 
 </head>
 
